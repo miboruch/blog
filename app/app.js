@@ -5,6 +5,7 @@ import routes from './REST/routes';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { config } from './config';
+import path from 'path';
 
 const app = express();
 
@@ -32,7 +33,7 @@ process.on('SIGINT', () => {
 });
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
-})
+  res.sendFile(path.join(__dirname, '../public/index.html'));
+});
 
 app.listen(process.env.PORT || 3000, () => console.log('Server is running'));
