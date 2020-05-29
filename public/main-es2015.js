@@ -1631,7 +1631,7 @@ __webpack_require__.r(__webpack_exports__);
 let AuthService = class AuthService {
     constructor(http) {
         this.http = http;
-        this.url = 'http://localhost:3000/api';
+        this.url = 'https://blog-tai-angular.herokuapp.com/api';
     }
     authenticate(credentials) {
         return this.http
