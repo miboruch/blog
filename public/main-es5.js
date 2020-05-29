@@ -2858,7 +2858,7 @@
     let DataService = class DataService {
       constructor(http) {
         this.http = http;
-        this.url = 'http://localhost:3000';
+        this.url = 'https://blog-tai-angular.herokuapp.com';
       }
 
       getAll() {
